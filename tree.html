@@ -198,15 +198,6 @@ data-server-root="{{server_root}}"
     </div><!-- id:tab_content -->
   </div><!-- ipython-main-app  -->
 
-{% endblock %}
-
-{% block script %}
-    {{super()}}
-
-<script src="{{ static_url("tree/js/main.min.js") }}" type="text/javascript" charset="utf-8"></script>
-{% endblock %}
-
-
 <!------ jquery start ---------->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
@@ -227,3 +218,11 @@ console.log($(".breadcrumb").html())
 
 
 <!------ jquery end ---------->
+
+{% endblock %}
+
+{% block script %}
+    {{super()}}
+
+<script src="{{ static_url("tree/js/main.min.js") }}" type="text/javascript" charset="utf-8"></script>
+{% endblock %}
