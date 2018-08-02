@@ -203,14 +203,18 @@ data-server-root="{{server_root}}"
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 
 <script>
-console.log($(".breadcrumb").html())  
-//.remove()
-$(".breadcrumb li:eq(0)").empty()
-console.log($(".breadcrumb li:eq(0)").html()) 
-console.log($(".breadcrumb").html()) 
+$(document).ready(function(){
+
+  console.log($(".breadcrumb").html())  
+  //.remove()
+  $(".breadcrumb li:eq(0)").empty()
+  console.log($(".breadcrumb li:eq(0)").html()) 
+  console.log($(".breadcrumb").html()) 
+
+  // $("#project_name").remove()
+  // $("#project_name").remove()
   
-// $("#project_name").remove()
-// $("#project_name").remove()
+});
   
 </script>
 
