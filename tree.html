@@ -201,6 +201,18 @@ data-server-root="{{server_root}}"
 {% block script %}
     {{super()}}
 
+<!------ jquery start ---------->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+<script>
+console.log($(".breadcrumb").html())  
+</script>
+
+
+
+
+<!------ jquery end ---------->
 
 <script src="{{ static_url("tree/js/main.min.js") }}" type="text/javascript" charset="utf-8"></script>
 {% endblock %}
