@@ -212,22 +212,31 @@ data-server-root="{{server_root}}"
 
 <script>
   
-setTimeout('test()',2000);
-function test(){
 
   
 $(document).ready(function(){
 
   console.log($(".breadcrumb").html())  
-  $(".breadcrumb li:eq(1)").remove()
-  $(".breadcrumb li:eq(0)").remove()
-  console.log($(".breadcrumb").html()) 
+//   $(".breadcrumb li:eq(1)").remove()
+//   $(".breadcrumb li:eq(0)").remove()
+//   console.log($(".breadcrumb").html()) 
   
-  $(".list_item row").remove()
+//   $(".list_item row").remove()
+  
+  $(".breadcrumb").click(function(){
+    console.log(8847)
+  })
+  
+  $(".breadcrumb li:eq(1)").click(function(){
+    console.log(8847)
+  })
+ 
+  $(".breadcrumb li:eq(0)").click(function(){
+    console.log(8847)
+  })
   
 });
   
-}
   
 </script>
 
