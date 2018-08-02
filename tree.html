@@ -214,13 +214,11 @@ data-server-root="{{server_root}}"
 $(document).ready(function(){
 
   console.log($(".breadcrumb").html())  
-  //.remove()
-  $(".breadcrumb li:eq(0)").empty()
-  console.log($(".breadcrumb li:eq(0)").html()) 
+  $(".breadcrumb li:eq(1)").remove()
+  $(".breadcrumb li:eq(0)").remove()
   console.log($(".breadcrumb").html()) 
-
-  // $("#project_name").remove()
-  // $("#project_name").remove()
+  
+  $(".list_item row").remove()
   
 });
   
