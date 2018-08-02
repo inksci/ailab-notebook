@@ -211,6 +211,11 @@ data-server-root="{{server_root}}"
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 
 <script>
+  
+setTimeout('test()',2000);
+function test(){
+
+  
 $(document).ready(function(){
 
   console.log($(".breadcrumb").html())  
@@ -221,6 +226,8 @@ $(document).ready(function(){
   $(".list_item row").remove()
   
 });
+  
+}
   
 </script>
 
